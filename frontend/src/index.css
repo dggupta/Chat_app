@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background: url(../bg.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+  width: 6px; /* Customize the scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background-color: aliceblue; /* Customize the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b1b1b; /* Customize the scrollbar thumb */
+  border-radius: 10px;
+}
+
+/* Avatar Style */
+.avatar {
+  position: relative; /* Needed for absolute positioning of the dot */
+}
+
+/* Green dot for online status */
+.avatar.online::after {
+  content: ''; /* Create an empty element */
+  position: absolute; /* Position it relative to the .avatar */
+  bottom: 0; /* Position it at the bottom of the avatar */
+  right: 0; /* Position it at the right of the avatar */
+  width: 10px; /* Set the width of the dot */
+  height: 10px; /* Set the height of the dot */
+  border-radius: 50%; /* Make it a circle */
+  background-color: green; /* Set the color of the dot */
+  border: 2px solid white; /* Optional: Add a white border around the dot */
+}
