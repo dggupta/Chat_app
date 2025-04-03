@@ -1,1 +1,1 @@
-export const BASE_URL="http://localhost:8080"
+export const BASE_URL= "https://chat-app-7vgc.onrender.com"|| "http://localhost:8080";
